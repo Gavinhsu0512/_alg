@@ -9,4 +9,3 @@ x = 2
 y = 3
 result = f(x, y)
 print(f"f({x}, {y}) = {result}")
-
