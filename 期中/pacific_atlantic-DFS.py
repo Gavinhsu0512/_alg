@@ -56,4 +56,4 @@ heights = [
 ]
 
 # 呼叫函數並打印結果
-print(pacificAtlantic(heights))  # 輸出結果：[[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]]
+print(pacificAtlantic(heights))  # 預期輸出：[[0, 4], [1, 3], [1, 4], [2, 2], [3, 0], [3, 1], [4, 0]]
