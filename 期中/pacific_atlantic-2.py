@@ -3,8 +3,8 @@ def pacificAtlantic(heights):
         return []
 
     m, n = len(heights), len(heights[0])
-    pacific_reach = [[False] * n for _ in range(m)]
-    atlantic_reach = [[False] * n for _ in range(m)]
+    pacific_reach = [[False] * n for _ in range(m)]  # 標註哪些格子能流向太平洋
+    atlantic_reach = [[False] * n for _ in range(m)]  # 標註哪些格子能流向大西洋
 
     # 定義DFS函數，從當前格子進行深度優先搜索
     def dfs(i, j, ocean_reach):
@@ -37,6 +37,6 @@ def pacificAtlantic(heights):
 
     return result
 
-heights = [[1]]
-print(pacificAtlantic(heights))
-
+# 測試例子
+heights = [[1]]  # 只有一個格子的情況
+print(pacificAtlantic(heights))  # 預期輸出 [[0, 0]]
